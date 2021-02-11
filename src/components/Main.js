@@ -1,6 +1,7 @@
 import React from 'react'
 import BarChart from './BarChart'
 import ScaleSlider from './ScaleSlider'
+import SlideChart from './SlideChart'
 
 const Main = () => {
     const chartRef = React.useRef();
@@ -43,6 +44,7 @@ const Main = () => {
                         <ScaleSlider updateScale={updateScale} />
                     </div>
                     <div className="line">
+                        <SlideChart data={dataset}/>
                     </div>
                 </div>                         
             </div>

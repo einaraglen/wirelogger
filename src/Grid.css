@@ -143,7 +143,7 @@
 .l1 {
     height: 38vh;
     width: 100vw;
-    grid-row: 1;
+    padding-bottom: 1vh;
 }
 
 .l2 {
@@ -154,7 +154,6 @@
 }
 
 .slider, .line {
-    height: 7.4vh;
-    width: 100vw;
+    height: 6vh;
     grid-area: 1 / 1;
 }
