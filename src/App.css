@@ -1,38 +1,71 @@
-.App {
+* {
+  margin: 0em;
+  padding: 0em;
+  color: rgba(191, 191, 191, 0.65);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+button {
+  border: 0.3vh solid #3498db;
+  background-color: rgba(0, 0, 0, 0);
+  width: 6vw;
+  height: 4vh;
+  border-radius: 1vh;
+  font-size: 1.5vh;
+  color: rgba(191, 191, 191, 0.65);
   text-align: center;
+  cursor: pointer;
+  transition: all ease .2s;
+  margin-right: 1vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.s-button {
+  float: right;
+  vertical-align: bottom;
+  margin-top: 13vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  color: rgba(191, 191, 191, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:focus {
+  border: 0.3vh solid #3498db;
+  outline: none;
+
 }
 
-.App-link {
-  color: #61dafb;
+.settings-img{
+  align-self: center;
+  height: 3vh;
+  width: auto;
+  filter: invert(60%);
+  float: right;
+  margin-right: 3vw;
+  transition: all ease .2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.settings-img:hover {
+  transform: rotate(30deg);
+  filter: invert(70%);
+}
+
+#item {
+  width: 9vw;
+  height: 100%;
+  background: rgb(13,218,109);
+  background: linear-gradient(90deg, rgba(13,218,109,0.47942927170868344) 0%, rgba(0,212,255,0.36458333333333337) 100%);
+  cursor: w-resize;
+  grid-area: 1 / 1;
+  text-align: center;
+  color: black;
+  resize: horizontal;
+  overflow: auto;
+}
+
+.handle {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  cursor: pointer;
 }
