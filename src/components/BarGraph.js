@@ -1,17 +1,6 @@
 import React, { forwardRef, useImperativeHandle, useState } from 'react'
-import {Chart, LineAdvance} from "bizcharts";
-
-const buildData = () => {
-  const values = require('../data/livedata.json')
-  let data = [{}]
-  values.data.forEach((curr) => {
-    data.push({x: curr.meter, y: curr.value})
-  })
-
-  return data
-}
-
-const data = buildData()
+import { Chart, Geom, useTheme, registerTheme, getTheme, Tooltip, Axis } from 'bizcharts';
+import Slider from 'bizcharts-plugin-slider';
 
 const BarGraph = forwardRef((props, ref) => {
   const [scale, setScale] = useState({
@@ -35,13 +24,10 @@ const BarGraph = forwardRef((props, ref) => {
   )
 
   return (
-    <Chart scale={scale} animate={false} height={400} autoFit data={data} >
-      <LineAdvance
-            position="x*y"
-            shape="smooth"
-						area
-            color="l (270) 0:rgba(255, 146, 255, 1) .5:rgba(100, 268, 255, 1) 1:rgba(215, 0, 255, 1)"
-          />
+    <Chart  scale={scale} data={props.data} animate={false} forceFit >
+      <Tooltip />
+      <Axis />
+      <Geom type="interval" position="x*y" color="#e50000" size={4}/>
     </Chart>
   )
 })
