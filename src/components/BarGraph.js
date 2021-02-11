@@ -40,7 +40,7 @@ const BarGraph = forwardRef((props, ref) => {
             position="x*y"
             shape="smooth"
 						area
-            color={['versionName', ['#79D1ED', '#FFA66B', 'rgba(0, 0, 0, 0)']]}
+            color="l (270) 0:rgba(255, 146, 255, 1) .5:rgba(100, 268, 255, 1) 1:rgba(215, 0, 255, 1)"
           />
     </Chart>
   )
