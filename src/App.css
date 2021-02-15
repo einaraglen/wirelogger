@@ -41,13 +41,22 @@ button:focus {
   width: auto;
   filter: invert(60%);
   float: right;
-  margin-right: 3vw;
+  margin-right: 1vw;
   transition: all ease .2s;
 }
 
 .settings-img:hover {
   transform: rotate(30deg);
   filter: invert(70%);
+}
+
+.logo-img {
+  align-self: center;
+  width: auto;
+  height: 2vh;
+  filter: brightness(0) invert(1);
+  opacity: .7;
+  margin-left: .2vw;
 }
 
 #item {

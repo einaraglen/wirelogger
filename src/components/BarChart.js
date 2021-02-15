@@ -10,7 +10,7 @@ const BarChart = forwardRef((props, ref) => {
             xAxes: [{
                 ticks: {
                     min: 0,
-                    max: 500
+                    max: 290
                 }
             }]
         },
@@ -55,8 +55,7 @@ const BarChart = forwardRef((props, ref) => {
     )
 
     return (
-        <Bar data={props.data} options={options}
-        />
+        <Bar data={props.data} options={options} />
     )
 })
 

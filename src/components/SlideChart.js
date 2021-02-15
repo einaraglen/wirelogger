@@ -34,6 +34,7 @@ const SlideChart = (props) => {
             hover: {
                 animationDuration: 0 // duration of animations when hovering an item
             },
+            tooltips: false,
             responsive: true,
             maintainAspectRatio: false,
             responsiveAnimationDuration: 0 
