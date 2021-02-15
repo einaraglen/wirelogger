@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Charts from './Charts'
-import Exceptions from './Exceptions'
 
 const Main = () => {
     const values = require('../data/livedata.json')
@@ -29,16 +28,7 @@ const Main = () => {
     const dataset = buildDataset()
     
     return (
-        <div className="main-grid">
-            <div className="m1">
-                <Switch>
-                    <Charts dataset={dataset}/>
-                    <Route path="/exceptions" component={Exceptions}/>
-                </Switch>
-            </div>
-            <div className="m2" id="side">
-            </div>
-        </div> 
+        <Charts dataset={dataset}/> 
     )
 }
 

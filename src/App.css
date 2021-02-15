@@ -35,19 +35,23 @@ button:focus {
 
 }
 
-.settings-img{
-  align-self: center;
-  height: 3vh;
-  width: auto;
-  filter: invert(60%);
-  float: right;
-  margin-right: 1vw;
+.side-img {
+  display: block;
+  height: auto;
+  width: 2.5vw;
+  filter: invert(70%);
+  margin: auto;
   transition: all ease .2s;
 }
 
-.settings-img:hover {
-  transform: rotate(30deg);
-  filter: invert(70%);
+.active {
+  filter: invert(100%);
+}
+
+.s-element {
+  width: 100%;
+  height: 9vh;
+  padding-top: 2vh;
 }
 
 .logo-img {

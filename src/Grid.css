@@ -174,3 +174,31 @@
     grid-area: 1 / 1;
     overflow: hidden;
 }
+
+.side {
+    display: grid;
+    height: 40vh;
+}
+
+.s-item {
+    width: 100%;
+    height: 10vh;
+}
+
+.side-text {
+    text-align: center;
+    margin-top: 1vh;
+    font-size: .8vw;
+}
+
+.side1 {
+    grid-row: 1;
+}
+
+.side2 {
+    grid-row: 2;
+}
+
+.side3 {
+    grid-row: 3;
+}

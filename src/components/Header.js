@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import logo from '../imgs/logo.png'
-import settings from '../imgs/settings.png'
 
 const Header = () => {
     return (
@@ -13,9 +12,6 @@ const Header = () => {
             <div className="header-item h2">
             </div>
             <div className="header-item h3">
-                <Link to='/settings'>
-                    <img src={settings} alt="Settings" className="settings-img"></img>
-                </Link>
             </div>
         </div>
     )
