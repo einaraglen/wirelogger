@@ -1,6 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import { useHistory, Link } from 'react-router-dom'
 
+import ColorForm from './ColorForm'
+import LimitForm from './LimitForm'
+import DatabaseForm from './DatabaseForm'
+
 const Settings = () => {
 
     function networkRequest() {
@@ -23,14 +27,10 @@ const Settings = () => {
 
     return (
         <div className="settings-grid">
-            <div className="settings-item s1">
-            </div>
-            <div className="settings-item s2">
-            </div>
-            <div className="settings-item s3"></div>
-            <div className="settings-item s4"></div>
-            <div className="settings-item s5"></div>
-            <div className="settings-item s6">
+            <ColorForm className="color-form" />
+            <LimitForm className="limit-form" />
+            <DatabaseForm className="data-form" />
+            <div className="buttons">
             <button className="s-button" onClick={!isLoading ? handleClick : null}>{isLoading ? 'Loading…' : 'Save'}</button>
             <Link to='/'>
                 <button className="s-button">Back</button>

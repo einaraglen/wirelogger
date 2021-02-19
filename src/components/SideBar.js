@@ -7,6 +7,7 @@ import exceptions from '../imgs/exceptions.png'
 import settings from '../imgs/settings.png'
 
 const SideBar = () => {
+
     return (
         <div className="side">
             <div className="s-item side1">

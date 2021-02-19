@@ -10,9 +10,10 @@ import SideBar from './components/SideBar'
 import './App.css'
 import './Grid.css'
 
-const VERSION = "0.0.1"
+const VERSION = "0.0.2"
 
 const App = () => {
+
   return (
     <Router>
       <Header />
